@@ -1,0 +1,4 @@
+Name: User
+IP: localhost
+Port: 25565
+Players: 4
