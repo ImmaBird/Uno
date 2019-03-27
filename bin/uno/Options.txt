@@ -1,4 +1,4 @@
-Name: User
+Name: Brad
 IP: localhost
-Port: 25565
+Port: 7777
 Players: 4
