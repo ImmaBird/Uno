@@ -18,12 +18,12 @@ public class Hand extends Pile {
 	public void drawCard(Deck deck) {
 		Card drawnCard = deck.removeCard();
 		this.getChildren().add(drawnCard);
-		this.addCard(drawnCard);
+		this.addTop(drawnCard);
 	}
 	
 	public void drawCard(Card drawnCard) {
 		this.getChildren().add(drawnCard);
-		this.addCard(drawnCard);
+		this.addTop(drawnCard);
 	}
 
 	public void playCard(Card playedCard) {

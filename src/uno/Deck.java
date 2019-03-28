@@ -7,21 +7,21 @@ public class Deck extends Pile {
 		for (int i = 0; i < 4; i++) {
 			for (int j = 0; j <= 12; j++) {
 				if (j <= 9) {
-					this.addCard(new Card(colors[i], j));
+					this.addTop(new Card(colors[i], j));
 				} else {
-					this.addCard(new Card(colors[i], j));
-					this.addCard(new Card(colors[i], j));
+					this.addTop(new Card(colors[i], j));
+					this.addTop(new Card(colors[i], j));
 				}
 			}
-			this.addCard(new Card(colors[4], 13));
-			this.addCard(new Card(colors[4], 14));
+			this.addTop(new Card(colors[4], 13));
+			this.addTop(new Card(colors[4], 14));
 		}
 		this.shuffle();
 	}
 
 	public void deal(Hand hand) {
 		for (int j = 0; j < 7; j++) {
-			hand.addCard(this.removeCard());
+			hand.addTop(this.removeCard());
 		}
 	}
 }
