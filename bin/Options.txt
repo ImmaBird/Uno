@@ -1,0 +1,4 @@
+Name: Brad
+IP: localhost
+Port: 25565
+Players: 2

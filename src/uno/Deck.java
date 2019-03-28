@@ -12,7 +12,7 @@ public class Deck extends Pile {
 	 * default constructor
 	 */
 	public Deck() {
-		String[] color = { "red", "blue", "green", "yellow" };
+		String[] color = { "red", "blue", "green", "yellow", "none"};
 		for (int i = 0; i < color.length; i++) {
 			this.addCard(new Card(color[i], 0));
 			this.addCard(new Card("wild", 13));
