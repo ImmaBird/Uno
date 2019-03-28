@@ -11,6 +11,7 @@ import javafx.scene.layout.VBox;
 public class Player extends VBox {
 	private String myName;
 	private Hand myCards;
+	private Card topCard;
 	private boolean myTurn;
 	private Deck deck;
 	private PrintWriter write;
